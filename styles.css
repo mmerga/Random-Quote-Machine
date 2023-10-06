@@ -1,0 +1,70 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#quote-box {
+    padding: 10px;
+    background: black;
+    border: 0px;
+    border-radius: 8px;
+    max-width: 40%;
+}
+@media (max-width: 770px) {
+    #quote-box{
+        max-width: 90%;
+    }
+}
+.quote-text{
+    display:flex;
+    text-align: center;
+
+    #text
+    {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+.quote-author{
+    display: flex;
+    justify-content: flex-end;
+
+    #author 
+    {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.3rem;
+        font-style: italic;
+        font-weight: bold;
+    }
+}
+.buttons{
+    display:block;
+
+    #new-quote
+    {  
+        float: right;
+        font-style: italic;
+        font-weight: bold;
+    }                
+}   
+footer{
+    margin-top: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    #git{
+        text-decoration: none;
+        color: inherit;
+    }
+}            
